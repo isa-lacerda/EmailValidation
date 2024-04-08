@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <form id="form" action="/">
+            <h1>Crie sua conta</h1>
+            <div class="container">
+                <div class="input-control">
+                    <label for="username">Nome de usuário</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error" id="username-error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" placeholder="Ex.: homura@gmail.com">
+                    <div class="error" id="email-error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Senha</label>
+                    <input id="password" name="password" type="password">
+                    <div class="error" id="password-error"></div>
+                </div>
+                <div id="loading-spinner" style="display: none;">Loading...</div> <!-- Adicionando o elemento loading-spinner -->
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
